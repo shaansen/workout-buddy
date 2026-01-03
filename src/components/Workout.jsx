@@ -2,7 +2,6 @@ import { useParams, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { workoutSchedule, weekDays } from '../data/workouts'
 import { getDayProgress, saveDayProgress, getDateKey, isDayComplete, markDayComplete, getDayOfWeek } from '../utils/storage'
-import ExerciseAnimation from './ExerciseAnimation'
 import './Workout.css'
 
 function Workout() {
@@ -107,10 +106,6 @@ function Workout() {
                 {!isYogaDay && <span className="exercise-reps">{exercise.reps} reps</span>}
               </div>
 
-              {!isYogaDay && (
-                <ExerciseAnimation exerciseId={exercise.id} exerciseName={exercise.name} />
-              )}
-              
               {isYogaDay ? (
                 <div className="yoga-completion">
                   <button

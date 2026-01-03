@@ -10,7 +10,6 @@ A mobile-friendly React app for tracking your daily workout progress. Mark sets 
 - ✅ **Set Tracking**: Mark individual sets as complete for each exercise
 - 📊 **Progress Tracking**: Visual progress bars show your completion status
 - 📈 **Weekly Consistency**: Track your workout consistency across weeks
-- 💪 **Animated Stick Figures**: Interactive SVG stick figure animations for each exercise
 - 💾 **Local Storage**: Your progress is saved automatically
 - 📱 **Mobile-Friendly**: Optimized for native app-like experience on mobile devices
 
@@ -81,30 +80,10 @@ npm run build
 
 1. **View Schedule**: The home page shows your weekly workout schedule
 2. **Select a Day**: Tap on any day to see the exercises for that workout
-3. **View Exercise Demos**: Tap "Show Exercise Demo" to see animated stick figure demonstrations
-4. **Mark Sets**: Tap on each set button to mark it as complete
-5. **Track Progress**: See your progress bar update as you complete sets
-6. **View Stats**: Click "📊 Stats" to see your weekly consistency
-7. **Your Progress is Saved**: All progress is automatically saved to your browser's local storage
-
-## Exercise Animations
-
-The app includes animated SVG stick figures for each exercise to help you learn proper form. All animations are:
-
-- **Self-contained**: No external dependencies or files needed
-- **Lightweight**: SVG-based animations are small and fast
-- **Customizable**: Easy to modify in `src/data/exerciseAnimations.js`
-- **Animated**: CSS animations show the movement pattern for each exercise
-
-### Customizing Animations
-
-You can customize the stick figure animations by editing `src/data/exerciseAnimations.js`. Each exercise has:
-- Body position angles
-- Arm and leg positions
-- Animation type (squat, press, curl, etc.)
-- Equipment visualization (weights, bench, box)
-
-The stick figures are rendered using the `StickFigure` component in `src/components/StickFigure.jsx`.
+3. **Mark Sets**: Tap on each set button to mark it as complete
+4. **Track Progress**: See your progress bar update as you complete sets
+5. **View Stats**: Click "📊 Stats" to see your weekly consistency
+6. **Your Progress is Saved**: All progress is automatically saved to your browser's local storage
 
 ## Technology Stack
 
